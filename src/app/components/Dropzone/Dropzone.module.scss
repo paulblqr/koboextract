@@ -41,30 +41,33 @@
 }
 
 .Active {
-  background-color: white;
+  background-color: black;
 
   label {
-    animation: shake 0.2s ease-out infinite;
+    animation: shake 0.7s $cubic infinite;
   }
 }
 
 @keyframes shake {
   0% {
-    color: $primary;
-    transform: translateX(0);
+    color: $pink;
+    transform: scale(1);
   }
-  25% {
-    transform: translateX(-5px);
+  33% {
+    color: $blue;
+    transform: scale(1.04);
   }
+
   50% {
-    color: $red;
-    transform: translateX(5px);
+    color: $pink;
+    transform: scale(1.08);
   }
-  75% {
-    transform: translateX(-5px);
+  66% {
+    color: $blue;
+    transform: scale(1.04);
   }
   100% {
-    color: $primary;
-    transform: translateX(0);
+    color: $pink;
+    transform: scale(1.04);
   }
 }

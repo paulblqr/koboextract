@@ -5,6 +5,7 @@ $radius: 4px;
   position: relative;
   width: 100%;
   margin: 24px 0px;
+  @include reveal;
   &:hover {
     .Text {
       transform: translate(-5px, -5px);
