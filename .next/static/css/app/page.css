@@ -171,7 +171,7 @@
 .Dropzone_Active__sfVyf {
   background-color: white;
 }
-.Dropzone_Active__sfVyf h1 {
+.Dropzone_Active__sfVyf label {
   animation: Dropzone_shake__rJsqh 0.2s ease-out infinite;
 }
 
