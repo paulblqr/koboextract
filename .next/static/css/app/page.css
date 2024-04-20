@@ -1,0 +1,197 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/Quote/Quote.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Quote_Item__WD2_9 {
+  position: relative;
+  width: 100%;
+  margin: 24px 0px;
+}
+.Quote_Item__WD2_9:hover .Quote_Text__OqQjA {
+  transform: translate(-5px, -5px);
+}
+.Quote_Item__WD2_9:hover .Quote_Background__hrGE_ {
+  transform: translate(5px, 5px);
+}
+
+.Quote_Background__hrGE_ {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ea526f;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  border-radius: 4px;
+}
+
+.Quote_Text__OqQjA {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 24px;
+  cursor: pointer;
+  color: #ffeaec;
+  background-color: #256eff;
+  border: 1px solid #c1c1c1;
+  transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  position: relative;
+  z-index: 3;
+  border-radius: 4px;
+}
+
+.Quote_Snackbar__EEbIh {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  z-index: 10;
+  font-size: 12px;
+  background-color: #f3a712;
+  padding: 8px;
+  animation: Quote_fadein__Z6093 1.8s cubic-bezier(0.51, 0.92, 0.24, 1.15) forwards;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+@keyframes Quote_fadein__Z6093 {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(70px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/style/main.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.main_Wrapper__rVC8K {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_Container__CjiMO {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 24px;
+  background-color: #001011;
+}
+
+.main_Results__ckZhb {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+  width: 800px;
+}
+
+.main_ClearContainer__BsdDX {
+  display: flex;
+  justify-content: center;
+  color: #f45b69;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+.main_ClearContainer__BsdDX:hover .main_ClearText__Y8p4p {
+  margin: 0px 2px;
+  transform: translateY(2px);
+}
+
+.main_ClearText__Y8p4p {
+  margin: 0px 6px;
+  transition: all 0.4s ease-out;
+}
+
+@media (max-width: 800px) {
+  .main_Results__ckZhb {
+    width: 100%;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/app/components/Dropzone/Dropzone.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Dropzone_Wrapper__igKG_ {
+  background-color: #001011;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Dropzone_Container__WiAKt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.Dropzone_FileInput__YvcJS {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.Dropzone_DragTitle__50Gaz {
+  font-size: 24px;
+  line-height: 36px;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+  font-weight: 600;
+}
+
+.Dropzone_Error__ZAJxt {
+  margin: 10px 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #f45b69;
+}
+
+.Dropzone_Active__sfVyf {
+  background-color: white;
+}
+.Dropzone_Active__sfVyf h1 {
+  animation: Dropzone_shake__rJsqh 0.2s ease-out infinite;
+}
+
+@keyframes Dropzone_shake__rJsqh {
+  0% {
+    color: #093a3e;
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    color: #f45b69;
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    color: #093a3e;
+    transform: translateX(0);
+  }
+}
