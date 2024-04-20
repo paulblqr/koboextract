@@ -44,7 +44,7 @@
   background-color: black;
 
   label {
-    animation: shake 0.7s $cubic infinite;
+    animation: shake 0.9s $cubic infinite;
   }
 }
 
@@ -53,21 +53,14 @@
     color: $pink;
     transform: scale(1);
   }
-  33% {
-    color: $blue;
-    transform: scale(1.04);
-  }
 
   50% {
-    color: $pink;
+    color: $blue;
     transform: scale(1.08);
   }
-  66% {
-    color: $blue;
-    transform: scale(1.04);
-  }
+
   100% {
     color: $pink;
-    transform: scale(1.04);
+    transform: scale(1);
   }
 }

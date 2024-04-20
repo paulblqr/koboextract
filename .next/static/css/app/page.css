@@ -4,7 +4,7 @@
 .Quote_Item__WD2_9 {
   position: relative;
   width: 100%;
-  margin: 24px 0px;
+  margin: 20px 0px;
   opacity: 0;
   animation: Quote_fadeIn__yqhr_ 0.9s cubic-bezier(0.19, 0.08, 0.37, 1.2) forwards;
 }
@@ -127,14 +127,14 @@
   width: 100%;
   height: 100%;
   background-color: #ea526f;
-  z-index: 1;
+  z-index: 2;
   transition: all 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
   border-radius: 4px;
 }
 
 .Quote_Text__OqQjA {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 28px;
   padding: 24px;
   cursor: pointer;
   color: #ffeaec;
@@ -152,12 +152,14 @@
   bottom: 0px;
   opacity: 0;
   z-index: 10;
-  font-size: 12px;
+  font-size: 10px;
   background-color: #f3a712;
   padding: 8px;
   animation: Quote_fadein__Z6093 1.8s cubic-bezier(0.51, 0.92, 0.24, 1.15) forwards;
   z-index: 2;
   border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @keyframes Quote_fadein__Z6093 {
@@ -201,7 +203,7 @@
 .main_Results__ckZhb {
   display: flex;
   flex-direction: column;
-  padding: 80px 0px;
+  padding: 24px 0px;
   width: 800px;
 }
 
@@ -215,6 +217,7 @@
   text-transform: uppercase;
   font-weight: 700;
   transition: all 0.2s ease-out;
+  margin-bottom: 80px;
 }
 .main_ClearContainer__BsdDX:hover .main_ClearText__Y8p4p {
   margin: 0px 2px;
@@ -224,6 +227,15 @@
 .main_ClearText__Y8p4p {
   margin: 0px 6px;
   transition: all 0.4s ease-out;
+}
+
+.main_Title__HI9MO {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffeaec;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
@@ -280,7 +292,7 @@
   background-color: black;
 }
 .Dropzone_Active__sfVyf label {
-  animation: Dropzone_shake__rJsqh 0.7s cubic-bezier(0.51, 0.92, 0.24, 1.15) infinite;
+  animation: Dropzone_shake__rJsqh 0.9s cubic-bezier(0.51, 0.92, 0.24, 1.15) infinite;
 }
 
 @keyframes Dropzone_shake__rJsqh {
@@ -288,20 +300,12 @@
     color: #ea526f;
     transform: scale(1);
   }
-  33% {
-    color: #256eff;
-    transform: scale(1.04);
-  }
   50% {
-    color: #ea526f;
-    transform: scale(1.08);
-  }
-  66% {
     color: #256eff;
-    transform: scale(1.04);
+    transform: scale(1.08);
   }
   100% {
     color: #ea526f;
-    transform: scale(1.04);
+    transform: scale(1);
   }
 }

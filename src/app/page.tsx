@@ -8,7 +8,7 @@ import Dropzone from "./components/Dropzone/Dropzone";
 var parseString = require("xml2js").parseString;
 
 const Main = () => {
-  const [data, setData] = useState<[] | null>(null);
+  const [data, setData] = useState(null);
   const [error, setError] = useState("");
 
   const handleFileChange = async (files) => {
@@ -23,7 +23,11 @@ const Main = () => {
     const xmlContent = await convertAnnotToXml(file);
 
     parseString(xmlContent, function (err, result) {
-      setData(result.annotation.annotationSet[0].annotation);
+      console.log(result, "result");
+      setData({
+        title: result.annotation.annotationSet[0].publication[0]["dc:title"][0],
+        notes: result.annotation.annotationSet[0].annotation,
+      });
     });
   };
 
@@ -54,8 +58,9 @@ const Main = () => {
           >
             [ <span className={style.ClearText}>Clear</span> ]
           </div>
+          <div className={style.Title}>{data.title}</div>
           <div className={style.Results}>
-            {data.map((item, index) => {
+            {data.notes.map((item, index) => {
               return (
                 <Quote key={index}>{item.target[0].fragment[0].text[0]}</Quote>
               );

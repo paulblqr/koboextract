@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./Quote.module.scss";
+import Copy from "../Copy";
 export default function Quote({ children }: { children: React.ReactNode }) {
   const [snackBar, setSnackBar] = useState(false);
 
